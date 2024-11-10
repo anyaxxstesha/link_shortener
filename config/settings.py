@@ -91,3 +91,7 @@ STATICFILES_DIRS = (BASE_DIR / 'static',)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+SCHEME = os.getenv('SCHEME')
+DOMAIN = os.getenv('DOMAIN')
+PORT = os.getenv('PORT')
