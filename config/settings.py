@@ -1,15 +1,10 @@
-import os
 from pathlib import Path
-
-import dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv.load_dotenv(BASE_DIR / '.env')
+SECRET_KEY = 'django-insecure-&u91)ne_cgrbjl012-1*z^04=8zel)m@pi89(siajzqmt-w)#5'
 
-SECRET_KEY = os.getenv('SECRET_KEY')
-
-DEBUG = os.getenv('DEBUG', False) == 'True'
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -92,6 +87,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-SCHEME = os.getenv('SCHEME')
-DOMAIN = os.getenv('DOMAIN')
-PORT = os.getenv('PORT')
+SCHEME = 'http'
+DOMAIN = 'localhost'
+PORT = '8000'

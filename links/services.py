@@ -7,7 +7,7 @@ from links.models import Link
 
 
 def generate_short_url():
-    """Generates a short URL for the given URL"""
+    """Generates a short URL"""
     chars = string.ascii_letters + string.digits
     size = 6
     while True:
