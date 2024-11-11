@@ -1,7 +1,6 @@
 # Для запуска:
-1. Заполнить файл .env.sample, изменить его название на .env
-2. Ввести команду "pip install -r requirements.txt"
-3. Ввести команду "python manage.py runserver"
+1. Ввести команду "pip install -r requirements.txt"
+2. Ввести команду "python manage.py runserver"
 
 # Эндпоинты:
 
